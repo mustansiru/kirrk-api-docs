@@ -83,7 +83,7 @@ None
 ### Maps to FE Screen
 [2. Signup - Checking...](https://projects.invisionapp.com/d/main#/console/16190609/350270976/preview)
 
-## Check if email validation is required
+## 3. Check if email validation is required
 ```http
 POST /access-user/validate-email
 ```
@@ -107,7 +107,7 @@ None
 [2. Sign Up Copy](https://projects.invisionapp.com/d/main#/console/16190609/350270975/preview)
 
 
-## Generate an email validation code
+## 4. Generate an email validation code
 ```http
 POST /access-user/validate-email/send
 ```
@@ -145,7 +145,7 @@ Generate an email validation code. This API can be called to regenerate an email
 [2. Sign Up Copy](https://projects.invisionapp.com/d/main#/console/16190609/350270975/preview)
 
 
-## Validate email using the generated code
+## 5. Validate email using the generated code
 ```http
 POST /access-user/validate-email/{code}
 ```
