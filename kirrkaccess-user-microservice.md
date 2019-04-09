@@ -145,13 +145,14 @@ Generate an email validation code. This API can be called to regenerate an email
 [2. Sign Up Copy](https://projects.invisionapp.com/d/main#/console/16190609/350270975/preview)
 
 
-## SCENARIO
+## Validate email using the generated code
 ```http
 POST /access-user/validate-email/{code}
 ```
 ### Input
 ```JSON
 {
+    "code":"string",
     "email":"string"
 }
 ```
@@ -161,17 +162,18 @@ Response 200 OK
 [output object]
 ```
 ```http
+Response 400 Bad Request: 
+- The email is already validated.
+- The email validation code is invalid.
+```
+```http
 Response 500 Internal Server Error
 ```
-On successful user creation, the user will be automatically logged in and the auth token will be sent as a result.
+Validate email address using the code shared with the user.
 
 ### Events published:
-#### `EVENT_NAME`
--- Namespace: `Kirrk.Services.Common.Events`
--- Model:
-```JSON
-```
+None
 
 ### Maps to FE Screen
-[]()
+External Web App page redirected from the email validation link.
 
