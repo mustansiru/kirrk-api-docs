@@ -1,3 +1,19 @@
+# Request Object
+```json
+{
+    "data": object
+}
+```
+
+# Response Object
+```json
+{
+    "statusCode": "200",
+    "message": "",
+    "data": object
+}
+```
+
 # User microservice
 ## 1. Register Kirrk Access User
 ```http
